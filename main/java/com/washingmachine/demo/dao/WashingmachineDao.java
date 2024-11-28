@@ -22,4 +22,8 @@ public class WashingmachineDao{
 	}
 	public WashingmachineEntity getInfo(int id) {
 		return washingmachineRepo.findById(id).get();	}
+	public String deletecolour(int id) {
+		 washingmachineRepo.deleteById(id);
+		 return "Deleted Successfully";
+	}
 }

@@ -27,4 +27,10 @@ WashingmachineDao washingmachineDao;
 	return washingmachineDao.getInfo(id);
 	}
 
+	public String deletecolour(int id) {
+	
+		return washingmachineDao.deletecolour(id);
+	}
+	
+ 
 }
